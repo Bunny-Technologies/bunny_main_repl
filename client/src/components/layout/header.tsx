@@ -39,7 +39,7 @@ export function Header() {
               <Button
                 variant="ghost"
                 size="sm"
-                className={location === link.href ? "bg-muted" : ""}
+                className={`font-semibold ${location === link.href ? "bg-muted" : ""}`}
                 data-testid={`link-nav-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
                 aria-current={location === link.href ? "page" : undefined}
               >
@@ -83,7 +83,7 @@ export function Header() {
                 <Link key={link.href} href={link.href} onClick={() => setIsOpen(false)}>
                   <Button
                     variant="ghost"
-                    className={`w-full justify-start ${location === link.href ? "bg-muted" : ""}`}
+                    className={`w-full justify-start font-semibold ${location === link.href ? "bg-muted" : ""}`}
                     data-testid={`link-mobile-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
                   >
                     {link.label}
