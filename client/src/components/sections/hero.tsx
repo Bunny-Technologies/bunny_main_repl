@@ -5,6 +5,7 @@ import { Phone, ArrowRight, Brain, Cpu, Cloud, Eye } from "lucide-react";
 import { CONTACT_INFO } from "@shared/schema";
 import { BunnyLogo } from "@/components/logo";
 import qrCodeImage from "@assets/WhatsApp_Image_2025-12-31_at_17.15.11_(1)_1767182518083.jpeg";
+import innovationImage from "@assets/generated_images/futuristic_ai_iot_network_sphere.png";
 
 const capabilities = [
   { label: "Agentic AI", icon: Brain },
@@ -59,17 +60,20 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex flex-col items-center gap-6 lg:items-end">
+            <div className="relative" data-testid="hero-innovation-image">
+              <div className="absolute -inset-4 rounded-full bg-gradient-to-r from-green-500/30 via-primary/20 to-accent/30 blur-3xl"></div>
+              <div className="relative h-64 w-64 md:h-80 md:w-80 rounded-full overflow-hidden border-4 border-green-500/30 shadow-2xl">
+                <img src={innovationImage} alt="AI and IoT Innovation" className="h-full w-full object-cover" />
+              </div>
+            </div>
             <div className="relative" data-testid="hero-info-card">
-              <div className="absolute -inset-4 rounded-3xl bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 blur-2xl"></div>
-              <div className="relative rounded-2xl border bg-card p-8 shadow-lg">
-                <div className="space-y-6">
-                  <div className="flex items-center justify-center">
-                    <div className="h-24 w-24 rounded-lg overflow-hidden bg-white p-1" data-testid="qr-code">
-                      <img src={qrCodeImage} alt="Scan to visit our knowledge base" className="h-full w-full object-contain" />
-                    </div>
+              <div className="relative rounded-2xl border bg-card/90 backdrop-blur p-4 shadow-lg">
+                <div className="flex items-center gap-4">
+                  <div className="h-16 w-16 rounded-lg overflow-hidden bg-white p-1 flex-shrink-0" data-testid="qr-code">
+                    <img src={qrCodeImage} alt="Scan to visit our knowledge base" className="h-full w-full object-contain" />
                   </div>
-                  <div className="text-center">
+                  <div className="text-left">
                     <p className="text-sm font-medium text-muted-foreground" data-testid="text-qr-label">Scan to visit our</p>
                     <p className="font-semibold" data-testid="text-qr-title">Knowledge Base</p>
                   </div>
