@@ -28,8 +28,8 @@ export function Header() {
         <Link href="/" className="flex items-center gap-2" data-testid="link-logo">
           <BunnyLogo size={40} />
           <div className="flex flex-col leading-tight">
-            <span className="text-sm font-bold text-primary">BUNNY</span>
-            <span className="text-sm font-bold text-green-600">INNOVATIONS</span>
+            <span className="text-sm font-bold bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-600 bg-clip-text text-transparent">BUNNY</span>
+            <span className="text-sm font-bold bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-600 bg-clip-text text-transparent">INNOVATIONS</span>
           </div>
         </Link>
 
@@ -75,8 +75,8 @@ export function Header() {
               <Link href="/" className="flex items-center gap-2 mb-6" onClick={() => setIsOpen(false)} data-testid="link-mobile-logo">
                 <BunnyLogo size={40} />
                 <div className="flex flex-col leading-tight">
-                  <span className="text-sm font-bold text-primary">BUNNY</span>
-                  <span className="text-sm font-bold text-green-600">INNOVATIONS</span>
+                  <span className="text-sm font-bold bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-600 bg-clip-text text-transparent">BUNNY</span>
+                  <span className="text-sm font-bold bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-600 bg-clip-text text-transparent">INNOVATIONS</span>
                 </div>
               </Link>
               {navLinks.map((link) => (

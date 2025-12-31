@@ -25,8 +25,8 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2">
               <BunnyLogo size={40} />
               <div className="flex flex-col leading-tight">
-                <span className="text-sm font-bold text-primary">BUNNY</span>
-                <span className="text-sm font-bold text-green-600">INNOVATIONS</span>
+                <span className="text-sm font-bold bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-600 bg-clip-text text-transparent">BUNNY</span>
+                <span className="text-sm font-bold bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-600 bg-clip-text text-transparent">INNOVATIONS</span>
               </div>
             </Link>
             <p className="text-sm text-muted-foreground">

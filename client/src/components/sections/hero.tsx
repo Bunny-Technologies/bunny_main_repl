@@ -28,7 +28,8 @@ export function Hero() {
 
             <div className="space-y-4">
               <h1 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl" data-testid="text-hero-title">
-                <span className="text-primary">Bunny</span> Innovations
+                <span className="bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-600 bg-clip-text text-transparent">Bunny</span>{" "}
+                <span className="bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-600 bg-clip-text text-transparent">Innovations</span>
               </h1>
               <p className="text-xl text-muted-foreground md:text-2xl" data-testid="text-hero-subtitle">
                 Agentic AI, Cloud, and IoT that deliver <span className="font-semibold text-foreground">measurable outcomes</span>
