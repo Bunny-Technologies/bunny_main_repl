@@ -73,16 +73,6 @@ export function Hero() {
                     <p className="text-sm font-medium text-muted-foreground" data-testid="text-qr-label">Scan to visit our</p>
                     <p className="font-semibold" data-testid="text-qr-title">Knowledge Base</p>
                   </div>
-                  <div className="grid grid-cols-2 gap-3 pt-4 border-t">
-                    <div className="text-center" data-testid="stat-experience">
-                      <p className="text-2xl font-bold text-primary" data-testid="text-experience-value">20+</p>
-                      <p className="text-xs text-muted-foreground" data-testid="text-experience-label">Years Experience</p>
-                    </div>
-                    <div className="text-center" data-testid="stat-projects">
-                      <p className="text-2xl font-bold text-accent" data-testid="text-projects-value">50+</p>
-                      <p className="text-xs text-muted-foreground" data-testid="text-projects-label">Projects Delivered</p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
