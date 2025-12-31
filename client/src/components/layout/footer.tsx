@@ -76,7 +76,7 @@ export function Footer() {
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Globe className="h-4 w-4 text-primary" />
                 <a href={CONTACT_INFO.website} target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
-                  bunnyinnovations.net
+                  bunnyinnovations.com
                 </a>
               </li>
             </ul>

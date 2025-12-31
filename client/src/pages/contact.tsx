@@ -215,7 +215,7 @@ export default function ContactPage() {
                     <div>
                       <p className="font-medium">Website</p>
                       <span className="text-sm text-muted-foreground">
-                        bunnyinnovations.net
+                        bunnyinnovations.com
                       </span>
                     </div>
                   </a>

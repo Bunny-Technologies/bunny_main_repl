@@ -30,10 +30,10 @@ export type ContactForm = z.infer<typeof contactFormSchema>;
 export const CONTACT_INFO = {
   name: "Vadali Tejasviram",
   title: "Founder & Chief Architect",
-  phone: "+91 93933 53699",
-  email: "vtejasviram@bunnytechnologies.com",
-  website: "https://bunnyinnovations.net",
-  whatsapp: "https://wa.me/919393353699",
+  phone: "+91 89773 14888",
+  email: "info@bunnytechnologies.com",
+  website: "https://bunnyinnovations.com",
+  whatsapp: "https://wa.me/918977314888",
 } as const;
 
 export const CAPABILITIES = [
