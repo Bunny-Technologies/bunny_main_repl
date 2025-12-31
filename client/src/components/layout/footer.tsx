@@ -1,6 +1,7 @@
 import { Link } from "wouter";
-import { Share2, Phone, Mail, Globe } from "lucide-react";
+import { Phone, Mail, Globe } from "lucide-react";
 import { CONTACT_INFO } from "@shared/schema";
+import { BunnyLogo } from "@/components/logo";
 
 const footerLinks = [
   { href: "/about", label: "About" },
@@ -22,10 +23,11 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-green-600">
-                <Share2 className="h-5 w-5 text-white" />
+              <BunnyLogo size={40} />
+              <div className="flex flex-col leading-tight">
+                <span className="text-sm font-bold text-primary">BUNNY</span>
+                <span className="text-sm font-bold text-green-600">INNOVATIONS</span>
               </div>
-              <span className="text-lg font-bold">Bunny Innovations</span>
             </Link>
             <p className="text-sm text-muted-foreground">
               Agentic AI, Cloud, and IoT solutions that deliver measurable outcomes.

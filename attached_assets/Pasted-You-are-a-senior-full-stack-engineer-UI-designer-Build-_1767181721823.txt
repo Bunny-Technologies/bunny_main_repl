@@ -1,0 +1,129 @@
+You are a senior full-stack engineer + UI designer.
+
+Build a production-ready marketing website for “Bunny Innovations — AI + IoT + Cloud Solutions” that replicates the idea and structure of our PDF brochure.
+
+TECH STACK:
+Next.js 14 (App Router) + TypeScript + TailwindCSS.
+No database needed. Use a simple API route for the contact form.
+
+GOAL:
+The website should feel like an interactive version of the brochure:
+- Same narrative flow
+- Same modules (Agentic AI, IoT & Edge, Cloud & Data, Computer Vision & Digital Twins)
+- Same “Pilot-to-Scale” delivery model
+- Same Government/Civic use-cases, security posture, case studies, team, and CTA
+
+INFORMATION ARCHITECTURE (PAGES):
+1) Home (/)
+2) About (/about)
+3) Capabilities (/capabilities)
+4) Use-Cases (/use-cases)
+5) Government & Civic (/government)
+6) Security & Compliance (/security)
+7) Case Studies (/case-studies)
+8) Pilot Proposal (/pilot)
+9) Team (/team)
+10) Contact (/contact)
+11) Privacy (/privacy)
+
+HOME PAGE SECTIONS (ONE-PAGE SCROLL ALSO OK):
+A) Hero section:
+- Title: “Bunny Innovations”
+- Subtitle: “AI + IoT Solutions”
+- One-liner: “Agentic AI, Cloud, and IoT that deliver measurable outcomes”
+- Capability chips: “Agentic AI”, “IoT & Edge”, “Cloud & Data”, “Computer Vision”
+- CTA buttons: “Start a Pilot” + “Contact on WhatsApp”
+- Add a QR placeholder block: “Scan to visit our knowledge base”
+
+B) About Us:
+- Our Identity (3 bullets)
+- Our Mission (1–2 lines)
+- Engagement Model (Pilot-to-Scale, Flexible Deployment, Rapid Iterations)
+
+C) What We Do:
+4 capability cards:
+- Agentic AI & Automation
+- IoT & Edge Systems
+- Cloud & Data Engineering
+- Computer Vision & Digital Twins
+
+D) Agentic AI Deep-Dive:
+- Agent orchestration (LangChain, CrewAI, LlamaIndex)
+- Tool-use, Memory systems, RAG
+- Real-world applications: Fraud & Risk Checks, Permit Bots, Incident Triage, Citizen Service Assistants
+- Measurable outcomes: TAT reduction, detection improvement, operational effort reduction
+
+E) IoT/Edge + CV Analytics:
+- Data sources: CCTV, Sensors, GPS, Drones
+- Applications: pothole detection, encroachment alerts, water-logging risk, traffic heatmaps
+- Key benefits: edge+cloud processing, custom solutions, works with existing infrastructure
+
+F) Cloud & Data Stack:
+Show a simple grid listing:
+- Cloud: AWS/GCP/Azure
+- Agentic/AI: OpenAI API, LangChain, CrewAI, LlamaIndex
+- GenAI platforms: Bedrock, Vertex AI, Azure AI Studio
+- Data pipelines: Databricks, DBT, Kafka, Airflow
+- MLOps/Vector DB: MLflow, Docker, Kubernetes, Pinecone/Weaviate
+- Security: encryption, RBAC, audit logs
+
+G) How We Deliver (timeline):
+- 2-week Discovery
+- 4–6 week Pilot
+- Measured Impact
+- Scale
+Also show deployment options: On-prem, Gov-VPC/Cloud, Hybrid.
+
+H) Proven Case Studies:
+Create 4 cards with client + what delivered + outcome highlights.
+
+I) Government & Civic Use-Cases:
+Smart Traffic Analytics, Road Health Monitoring, Flood Early Warning, Permit GenAI Bot.
+Include security features for gov clients: Audit Trails, RBAC, Data retention, Data localization.
+
+J) Security & Compliance page content:
+Data security, privacy & compliance, infrastructure security, deployment options.
+
+K) Pilot Proposal Template:
+- Scope definition bullets
+- Data sources & success metrics
+- Timeline (Week 2 setup complete, Week 6 pilot complete)
+- Commercial terms (pilot model and scaling model)
+
+L) Why Bunny Innovations:
+Cards: Local/Fast/Accountable, Outcome-first, Seamless integration (no rip & replace), Transparent & collaborative, Proven track record.
+
+M) Team:
+Founder card (Vadali Tejasviram, Founder & Chief Architect) + two advisor placeholders.
+
+N) CTA:
+“Let’s start your pilot journey” with 4 steps:
+1) Nominate nodal officer
+2) Select 3 pilot locations
+3) Schedule kickoff meeting
+4) Evaluate & scale
+
+CONTACT DETAILS (use constants):
+Name: Vadali Tejasviram
+Title: Founder & Chief Architect
+Phone: +91 93933 53699
+Email: vtejasviram@bunnytechnologies.com
+Website: https://bunnyinnovations.net
+
+DESIGN SYSTEM (match brochure vibe):
+- Background: clean white
+- Section dividers: subtle lines
+- Colors: navy primary + orange accent + teal/green secondary accents for icons (keep consistent)
+- Rounded cards, minimal shadows, plenty of whitespace
+- Sticky header with anchor links (Home, Capabilities, Use-cases, Security, Pilot, Case studies, Team, Contact)
+- Footer repeated on all pages with phone/email/website
+
+FUNCTIONAL REQUIREMENTS:
+- Contact form posts to /api/contact and logs payload to console + returns success (no external email required).
+- WhatsApp CTA uses wa.me link placeholder using phone number.
+- Add SEO meta + OpenGraph; add sitemap + robots.txt.
+- Make mobile-first: readable on WhatsApp browser.
+
+DELIVERABLE:
+Generate the complete Next.js codebase with all pages, components, styling, and sample content matching the brochure structure.
+Include a README with run instructions.

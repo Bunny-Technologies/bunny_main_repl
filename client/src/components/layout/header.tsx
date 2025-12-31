@@ -1,9 +1,10 @@
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Share2, Phone } from "lucide-react";
+import { Menu, Phone } from "lucide-react";
 import { useState } from "react";
 import { CONTACT_INFO } from "@shared/schema";
+import { BunnyLogo } from "@/components/logo";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -25,10 +26,11 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" data-testid="header">
       <div className="container mx-auto flex h-16 items-center justify-between gap-4 px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2" data-testid="link-logo">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-green-600">
-            <Share2 className="h-5 w-5 text-white" />
+          <BunnyLogo size={40} />
+          <div className="flex flex-col leading-tight">
+            <span className="text-sm font-bold text-primary">BUNNY</span>
+            <span className="text-sm font-bold text-green-600">INNOVATIONS</span>
           </div>
-          <span className="text-lg font-bold text-foreground">Bunny Innovations</span>
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" data-testid="nav-desktop" aria-label="Main navigation">
@@ -71,10 +73,11 @@ export function Header() {
           <SheetContent side="right" className="w-80">
             <div className="flex flex-col gap-4 pt-8">
               <Link href="/" className="flex items-center gap-2 mb-6" onClick={() => setIsOpen(false)} data-testid="link-mobile-logo">
-                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-green-600">
-                  <Share2 className="h-5 w-5 text-white" />
+                <BunnyLogo size={40} />
+                <div className="flex flex-col leading-tight">
+                  <span className="text-sm font-bold text-primary">BUNNY</span>
+                  <span className="text-sm font-bold text-green-600">INNOVATIONS</span>
                 </div>
-                <span className="text-lg font-bold">Bunny Innovations</span>
               </Link>
               {navLinks.map((link) => (
                 <Link key={link.href} href={link.href} onClick={() => setIsOpen(false)}>
