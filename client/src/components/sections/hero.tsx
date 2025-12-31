@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Phone, ArrowRight, QrCode, Rabbit, Brain, Cpu, Cloud, Eye } from "lucide-react";
+import { Phone, ArrowRight, QrCode, Globe2, Brain, Cpu, Cloud, Eye } from "lucide-react";
 import { CONTACT_INFO } from "@shared/schema";
 
 const capabilities = [
@@ -19,7 +19,7 @@ export function Hero() {
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2 rounded-full border bg-background/80 px-4 py-2 backdrop-blur" data-testid="badge-hero-tagline">
-              <Rabbit className="h-4 w-4 text-primary" />
+              <Globe2 className="h-4 w-4 text-green-600" />
               <span className="text-sm font-medium">AI + IoT Solutions</span>
             </div>
 

@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Rabbit, Phone, Mail, Globe } from "lucide-react";
+import { Globe2, Phone, Mail, Globe } from "lucide-react";
 import { CONTACT_INFO } from "@shared/schema";
 
 const footerLinks = [
@@ -22,8 +22,8 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-                <Rabbit className="h-5 w-5 text-primary-foreground" />
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-green-600">
+                <Globe2 className="h-5 w-5 text-white" />
               </div>
               <span className="text-lg font-bold">Bunny Innovations</span>
             </Link>
