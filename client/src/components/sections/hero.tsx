@@ -1,9 +1,10 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Phone, ArrowRight, QrCode, Brain, Cpu, Cloud, Eye } from "lucide-react";
+import { Phone, ArrowRight, Brain, Cpu, Cloud, Eye } from "lucide-react";
 import { CONTACT_INFO } from "@shared/schema";
 import { BunnyLogo } from "@/components/logo";
+import qrCodeImage from "@assets/WhatsApp_Image_2025-12-31_at_17.15.11_(1)_1767182518083.jpeg";
 
 const capabilities = [
   { label: "Agentic AI", icon: Brain },
@@ -64,8 +65,8 @@ export function Hero() {
               <div className="relative rounded-2xl border bg-card p-8 shadow-lg">
                 <div className="space-y-6">
                   <div className="flex items-center justify-center">
-                    <div className="flex h-24 w-24 items-center justify-center rounded-2xl border-2 border-dashed border-muted-foreground/30 bg-muted/50" data-testid="qr-placeholder">
-                      <QrCode className="h-12 w-12 text-muted-foreground" />
+                    <div className="h-24 w-24 rounded-lg overflow-hidden bg-white p-1" data-testid="qr-code">
+                      <img src={qrCodeImage} alt="Scan to visit our knowledge base" className="h-full w-full object-contain" />
                     </div>
                   </div>
                   <div className="text-center">
