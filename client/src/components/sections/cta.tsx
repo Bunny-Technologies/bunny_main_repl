@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, UserCheck, MapPin, Calendar, TrendingUp } from "lucide-react";
+import qrCodeImage from "@assets/WhatsApp_Image_2025-12-31_at_17.15.11_(1)_1767182518083.jpeg";
 
 const steps = [
   { step: 1, title: "Nominate Nodal Officer", description: "Identify your project champion", icon: UserCheck },
@@ -40,7 +41,7 @@ export function CTA() {
           ))}
         </div>
 
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
           <Link href="/pilot">
             <Button size="lg" className="bg-accent text-accent-foreground" data-testid="button-cta-pilot">
               Start a Pilot
@@ -52,6 +53,25 @@ export function CTA() {
               Contact Us
             </Button>
           </Link>
+        </div>
+
+        <div className="max-w-xl mx-auto" data-testid="cta-info-card">
+          <Card>
+            <CardContent className="p-6">
+              <p className="text-sm font-medium text-muted-foreground mb-4 text-center">
+                The only AI + IoT platform that guarantees measurable outcomes through our proven Pilot-to-Scale methodology.
+              </p>
+              <div className="flex items-center gap-4 justify-center">
+                <div className="h-16 w-16 rounded-lg overflow-hidden bg-white p-1 flex-shrink-0" data-testid="qr-code">
+                  <img src={qrCodeImage} alt="Scan to visit our knowledge base" className="h-full w-full object-contain" />
+                </div>
+                <div className="text-left">
+                  <p className="text-sm font-medium text-muted-foreground" data-testid="text-qr-label">Scan to visit our</p>
+                  <p className="font-semibold" data-testid="text-qr-title">Knowledge Base</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
