@@ -16,7 +16,6 @@ export default function Home() {
   return (
     <div data-testid="page-home">
       <Hero />
-      <TrustedBy />
       <About />
       <Capabilities />
       <AgenticAI />
@@ -27,6 +26,7 @@ export default function Home() {
       <Government />
       <WhyBunny />
       <Team />
+      <TrustedBy />
       <CTA />
     </div>
   );
