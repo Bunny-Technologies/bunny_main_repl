@@ -1,4 +1,5 @@
 import { Hero } from "@/components/sections/hero";
+import { TrustedBy } from "@/components/sections/trusted-by";
 import { About } from "@/components/sections/about";
 import { Capabilities } from "@/components/sections/capabilities";
 import { AgenticAI } from "@/components/sections/agentic-ai";
@@ -15,6 +16,7 @@ export default function Home() {
   return (
     <div data-testid="page-home">
       <Hero />
+      <TrustedBy />
       <About />
       <Capabilities />
       <AgenticAI />
