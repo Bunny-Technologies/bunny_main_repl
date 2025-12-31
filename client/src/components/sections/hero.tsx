@@ -1,17 +1,18 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Phone, ArrowRight, Brain, Cpu, Cloud, Eye } from "lucide-react";
+import { Phone, ArrowRight, Brain, Cpu, Cloud, Eye, Box } from "lucide-react";
 import { CONTACT_INFO } from "@shared/schema";
 import { BunnyLogo } from "@/components/logo";
 import qrCodeImage from "@assets/WhatsApp_Image_2025-12-31_at_17.15.11_(1)_1767182518083.jpeg";
 import innovationImage from "@assets/generated_images/futuristic_ai_iot_network_sphere.png";
 
 const capabilities = [
-  { label: "Agentic AI", icon: Brain },
-  { label: "IoT & Edge", icon: Cpu },
-  { label: "Cloud & Data", icon: Cloud },
-  { label: "Computer Vision", icon: Eye },
+  { label: "Agentic AI", icon: Brain, href: "/capabilities#agentic-ai" },
+  { label: "IoT & Edge", icon: Cpu, href: "/capabilities#iot-edge" },
+  { label: "Cloud & Data", icon: Cloud, href: "/capabilities#cloud-data" },
+  { label: "Computer Vision", icon: Eye, href: "/use-cases#computer-vision" },
+  { label: "Digital Twins", icon: Box, href: "/use-cases#digital-twins" },
 ];
 
 export function Hero() {
@@ -38,27 +39,32 @@ export function Hero() {
 
             <div className="flex flex-wrap gap-2" data-testid="list-capabilities">
               {capabilities.map((cap) => (
-                <Badge key={cap.label} variant="secondary" className="gap-1.5 px-3 py-1.5" data-testid={`badge-capability-${cap.label.toLowerCase().replace(/\s+/g, "-")}`}>
-                  <cap.icon className="h-3.5 w-3.5" />
-                  {cap.label}
-                </Badge>
+                <Link key={cap.label} href={cap.href}>
+                  <Badge variant="outline" className="gap-1.5 px-4 py-2 cursor-pointer hover:bg-primary hover:text-primary-foreground transition-colors" data-testid={`badge-capability-${cap.label.toLowerCase().replace(/\s+/g, "-")}`}>
+                    <cap.icon className="h-3.5 w-3.5" />
+                    {cap.label}
+                  </Badge>
+                </Link>
               ))}
             </div>
 
             <div className="flex flex-wrap gap-3" data-testid="hero-cta-buttons">
               <Link href="/pilot">
-                <Button size="lg" className="bg-accent text-accent-foreground" data-testid="button-hero-pilot">
-                  Start a Pilot
+                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white" data-testid="button-hero-pilot">
+                  Start Your Pilot
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
-              <a href={CONTACT_INFO.whatsapp} target="_blank" rel="noopener noreferrer">
-                <Button size="lg" variant="outline" data-testid="button-hero-whatsapp">
-                  <Phone className="mr-2 h-4 w-4" />
-                  Contact on WhatsApp
+              <Link href="/case-studies">
+                <Button size="lg" variant="outline" data-testid="button-hero-case-studies">
+                  View Case Studies
                 </Button>
-              </a>
+              </Link>
             </div>
+
+            <p className="text-sm text-muted-foreground" data-testid="text-hero-stats">
+              Reduce turnaround time by 60%, improve detection accuracy by 40%, and cut manual effort by 75% with our proven AI + IoT solutions.
+            </p>
           </div>
 
           <div className="flex flex-col items-center gap-6 lg:items-end">
