@@ -14,20 +14,6 @@ const teamRoles = [
   { title: "Security Experts", icon: Shield, count: "2+" },
 ];
 
-const advisors = [
-  {
-    name: "AI Strategy Advisor",
-    role: "AI/ML Strategy Lead",
-    expertise: ["AI Strategy", "Machine Learning", "Research & Development"],
-    experience: "Industry expert with deep expertise in AI/ML research and commercialization",
-  },
-  {
-    name: "Government Technology Advisor",
-    role: "Public Sector Lead",
-    expertise: ["Government Procurement", "Public Policy", "Digital Governance"],
-    experience: "Extensive experience in government technology programs and policy advisory",
-  },
-];
 
 export default function TeamPage() {
   return (
@@ -134,26 +120,6 @@ export default function TeamPage() {
           </Card>
         </div>
 
-        <h2 className="text-2xl font-bold text-center mb-8">Advisory Board</h2>
-        <div className="grid gap-6 md:grid-cols-2 max-w-3xl mx-auto">
-          {advisors.map((advisor, index) => (
-            <Card key={index}>
-              <CardContent className="p-6 text-center">
-                <div className="flex h-20 w-20 mx-auto items-center justify-center rounded-full bg-muted mb-4">
-                  <User className="h-10 w-10 text-muted-foreground" />
-                </div>
-                <h3 className="font-semibold text-lg">{advisor.name}</h3>
-                <p className="text-sm text-muted-foreground mb-4">{advisor.role}</p>
-                <div className="flex flex-wrap gap-1.5 justify-center mb-4">
-                  {advisor.expertise.map((skill) => (
-                    <Badge key={skill} variant="outline" className="text-xs">{skill}</Badge>
-                  ))}
-                </div>
-                <p className="text-sm text-muted-foreground">{advisor.experience}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
       </div>
     </div>
   );
